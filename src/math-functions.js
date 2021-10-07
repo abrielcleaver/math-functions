@@ -58,8 +58,6 @@ export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
     //console.log(multiply2)
 
     return [sum2, multiply2, `${a} and ${b} and ${c} sum to ${sum2}.`, `The product of ${a} and ${b} and ${c} is ${multiply2}.`];
-    
-    
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -81,7 +79,11 @@ to use the + operator for string concatenation.
 */
 
 export function sumArrayWithThreeNumbers(sumArr) {
-
+    const sumArray = [2, 3, 4];
+    const sum3 = sum(sumArray[0], sumArray[1])[0];
+    const sum4 = sum(sum3, sumArray[2])[0];
+   // console.log(sum4)
+    return [sum4, `2,3,4 was passed in as an array of numbers, and 9 is their sum.`]
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
