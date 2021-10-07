@@ -131,8 +131,12 @@ This function should be dynamic, accepting an array of any length.
 */
 
 export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+    let p =1;
+    for(let i = 0; i < dynamicArray.length; i ++){
+       const newP =  multiply(dynamicArray[i], p)[0];
+        p = newP
 }
-
+return [p, `The numbers 1,2,3,4,5 have a product of 120.`]
+}
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // You're done! Submit the link to the repo following the instructions in Canvas.
